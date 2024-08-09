@@ -5,7 +5,7 @@ import com.senai.laziot.action.DTO.ActionInsertDTO;
 import com.senai.laziot.device.DeviceEntity;
 import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Builder @Getter @Setter @ToString @AllArgsConstructor @NoArgsConstructor

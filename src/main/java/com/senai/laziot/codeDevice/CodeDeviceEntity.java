@@ -2,7 +2,7 @@ package com.senai.laziot.codeDevice;
 
 import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Builder

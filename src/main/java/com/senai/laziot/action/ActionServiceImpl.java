@@ -6,12 +6,11 @@ import com.senai.laziot.action.DTO.ActionInsertDTO;
 import com.senai.laziot.action.DTO.ActionStateUpdateDTO;
 import com.senai.laziot.device.DeviceEntity;
 import com.senai.laziot.device.DeviceRepository;
-import com.senai.laziot.device.DeviceService;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;

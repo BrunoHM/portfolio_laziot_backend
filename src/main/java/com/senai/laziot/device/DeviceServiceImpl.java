@@ -3,13 +3,12 @@ package com.senai.laziot.device;
 import com.senai.laziot.device.DTO.DeviceFiltersDTO;
 import com.senai.laziot.device.DTO.DeviceLinkFilterDTO;
 import com.senai.laziot.device.DTO.DeviceSimplifiedDTO;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -35,24 +34,20 @@ public class DeviceServiceImpl implements DeviceService {
 
     @Override
     public boolean updateDeviceState(String userToken, int idDevice, boolean newDeviceState) {
-        int sucessUpdate = deviceRepository.updateDeviceState(userToken, idDevice, newDeviceState);
-        if(sucessUpdate == 1) return true;
-        return false;
-
+        int successUpdate = deviceRepository.updateDeviceState(userToken, idDevice, newDeviceState);
+        return successUpdate == 1;
     }
 
     @Override
     public boolean linkDevices(String userToken, int idEmitter, int idReceptor) {
-        int sucessLink = deviceRepository.setLinkDevices(idEmitter, idReceptor);
-        if(sucessLink == 1) return true;
-        return false;
+        int successLink = deviceRepository.setLinkDevices(idEmitter, idReceptor);
+        return successLink == 1;
     }
 
     @Override
     public boolean unlinkDevices(String userToken, int idEmitter, int idReceptor) {
-        int sucessLink = deviceRepository.setUnlinkDevices(idEmitter, idReceptor);
-        if(sucessLink == 1) return true;
-        return false;
+        int successUnLink = deviceRepository.setUnlinkDevices(idEmitter, idReceptor);
+        return successUnLink == 1;
     }
 
     @Override

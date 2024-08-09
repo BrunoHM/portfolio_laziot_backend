@@ -2,8 +2,7 @@ package com.senai.laziot.device;
 
 import com.senai.laziot.enums.DeviceTypesEnum;
 import lombok.*;
-
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Builder @Getter @Setter @ToString @AllArgsConstructor @NoArgsConstructor

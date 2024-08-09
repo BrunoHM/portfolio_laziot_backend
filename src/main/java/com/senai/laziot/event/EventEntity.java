@@ -4,7 +4,7 @@ import com.senai.laziot.action.ActionEntity;
 import com.senai.laziot.user.UserEntity;
 import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;

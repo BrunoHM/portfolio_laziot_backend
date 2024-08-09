@@ -4,7 +4,7 @@ import com.senai.laziot.device.DeviceEntity;
 import com.senai.laziot.user.UserEntity;
 import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.io.Serializable;
 
 @Entity

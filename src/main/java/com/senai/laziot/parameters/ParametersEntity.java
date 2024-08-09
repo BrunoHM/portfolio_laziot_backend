@@ -3,7 +3,7 @@ package com.senai.laziot.parameters;
 import com.senai.laziot.user.UserEntity;
 import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Builder

@@ -1,10 +1,7 @@
 package com.senai.laziot.user;
 
-
-import com.sun.istack.NotNull;
+import jakarta.persistence.*;
 import lombok.*;
-
-import javax.persistence.*;
 
 
 @Builder @Getter @Setter @ToString @AllArgsConstructor @NoArgsConstructor
@@ -28,7 +25,7 @@ public class UserEntity {
     @Column(name = "email")
     private String email;
 
-    @NotNull
+//    @NotNull
     @Column(name = "hashUniqueCode")
     private String hashUniqueCode;
 

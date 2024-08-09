@@ -6,7 +6,7 @@ import com.senai.laziot.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.util.List;
